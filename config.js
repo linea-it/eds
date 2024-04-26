@@ -6,10 +6,10 @@ var config = {
     idpCafeEntityID: "https://satosa-dev.linea.org.br/linea_saml/proxy",
     idpGoogleEntityID: "https://satosa-dev.linea.org.br/linea_saml_mirror/proxy/aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29t",
     idpGithubEntityID: "https://idp.github.com/idp/shibboleth",
-  
-    generateLoginUrl: function(idpType) {
+
+    generateLoginUrl: function (idpType) {
         var idpEntityID;
-        switch(idpType) {
+        switch (idpType) {
             case 'cafe':
                 idpEntityID = this.idpCafeEntityID;
                 break;
@@ -25,5 +25,19 @@ var config = {
         return this.shibLoginURL + '?SAMLDS=1&target=' + this.targetURL + '&entityID=' + idpEntityID;
     }
 };
+
+var referrerURL = document.referrer;
+
+
+if (referrerURL && referrerURL.includes("/155")) {
+    document.querySelector(".btn-cafe").style.display = "block";
+    document.querySelector(".btn-google").style.display = "block";
+}
+
+else if (referrerURL && referrerURL.includes("/174")) {
+    document.querySelector(".btn-cafe").style.display = "block";
+    document.querySelector(".btn-google").style.display = "none";
+}
+
 document.title = config.edsPageTitle;
-document.getElementById("edsTitle").innerHTML = config.edsPageTitle; 
+document.getElementById("edsTitle").innerHTML = config.edsPageTitle;
