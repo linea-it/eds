@@ -172,6 +172,18 @@ body.container {
   transform: translateY(-50%);
 }
 
+.MuiFormControl-root .btn.btn-cilogon {
+  background-color: rgb(60, 90, 154);
+}
+
+.MuiFormControl-root .btn.btn-cilogon .cilogon-icon-wrapper .cilogon-icon {
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 .MuiFormControl-root .btn.btn-cafe .cafe-icon-wrapper .cafe-icon {
   position: absolute;
   margin-top: 2px;
