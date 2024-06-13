@@ -8,69 +8,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    
+    <link rel="shortcut icon" type="imagex/png" href="/eds/images/favicon.png">
   </head>
 
   <body class="container">
     <div class="card">
-      <div class="card-header">
-        <div class="logo">
-          <img src="/eds/images/linea-logo.png" alt="LIneA Logo" />
+      <div class="row">
+        <div class="col-md-6">
+          <div class="logo">
+            <img src="/eds/images/linea-logo.png" alt="LIneA Logo" />
+          </div>
         </div>
-        <h3 id="edsTitle"></h3>
-      </div>
 
-      <div class="MuiFormControl-root">
-        <a
-          href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('cafe');"
-          class="btn btn-cafe"
-        >
-          <div class="cafe-icon-wrapper">
-            <img class="cafe-icon" src="/eds/images/cafe_logo.png" />
+        <div class="col-md-6">
+          <div class="card-header">
+            <h3 style="margin-bottom: 0px; margin-top: 3rem;"> Welcome to </h3>
+            <h3 id="edsTitle"></h3>
           </div>
-          <span>Login with CAFe</span>
-        </a>
-      </div>
-      <!--
-      <div class="MuiFormControl-root">
-        <a
-          href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('google');"
-          class="btn btn-google"
-        >
-          <div class="google-icon-wrapper">
-            <img class="google-icon" src="/eds/images/google_logo.svg" />
+
+          <div class="MuiFormControl-root">
+            <a href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('cafe');" class="btn btn-cafe">
+              <div class="cafe-icon-wrapper">
+                <img class="cafe-icon" src="/eds/images/cafe_logo.png" />
+              </div>
+              <span>Login with CAFe</span>
+            </a>
           </div>
-          <span>Login with Google</span>
-        </a>
-      </div>
-      -->
-      <!-- ===== Verificar exemplos de botões em https://cilogon.org/example/ ==== -->
-      <div class="MuiFormControl-root">
-        <a
-          href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('cilogon');"
-          class="btn btn-cilogon"
-        >
-          <div class="cilogon-icon-wrapper">
-            <img class="cilogon-icon" src="/eds/images/cilogon_icon.png" />
+        
+          <div class="MuiFormControl-root" style="margin-bottom: 5px;">
+            <a href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('cilogon');" class="btn btn-cilogon">
+              <div class="cilogon-icon-wrapper">
+                <img class="cilogon-icon" src="/eds/images/cilogon_logo.png" />
+              </div>
+              <span>Login with CILogon</span>
+            </a>
           </div>
-          <span>Login with CILogon</span>
-        </a>
+
+          <p class="new-user">
+            New user? <a href="https://linea.org.br/servicos/9-registro-de-participantes/" target="_blank" style="color: #095ce0;"> Register here </a>.
+          </p>
+        </div>
       </div>
 
       <div class="terms-and-info">
         <p>
           In case you have any problem authenticating or registering, please
-          <strong
-            ><a href="mailto:helpdesk@linea.org.br" target="_blank">contact our helpdesk</a></strong
-          >.
-        </p>
-        <p>
-          You must read, agree with, and accept all of the
-          <strong
-            ><a href="https://identity.linea.org.br/terms.html" target="_blank"
-              >terms and conditions</a
-            ></strong
-          >.
+          <a href="mailto:helpdesk@linea.org.br" target="_blank">contact our helpdesk</a>.
         </p>
       </div>
     </div>
