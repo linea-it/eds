@@ -4,7 +4,7 @@ body {
 }
 
 body.container {
-  background-image: url('images/background.jpg');
+  background-image: url('/eds/images/background.jpg');
   background-repeat: round;
   background-attachment: fixed;
   width: 100% !important;
