@@ -21,7 +21,7 @@ Página de Login com botões referente aos provedores de autenticação configur
     </SSO>
     ```
     **OBS.:** Substitua `FQDN-Service` pelo FQDN do serviço em questão, ex. `register.linea.org.br`.
-5. Adicione no arquivo de configuração do apache, exemplo `shib.conf`, o seguinte conteúdo:
+5. Adicione no arquivo de configuração do apache, exemplo `/opt/rh/httpd24/root/etc/httpd/conf.d/shib.conf`, o seguinte conteúdo:
     ```apache
     Alias "/eds" "/var/www/eds"
     <Directory "/var/www/eds">
@@ -31,6 +31,9 @@ Página de Login com botões referente aos provedores de autenticação configur
     </Directory>
     ```
 6. Reinicie o Apache
+   ```bash
+   systemctl restart httpd24-httpd.service
+   ```
 
 ### Observações gerais
 
