@@ -4,7 +4,7 @@ body {
 }
 
 body.container {
-  background-image: url('/eds/images/background.jpg');
+  background-image: url('images/background.jpg');
   background-repeat: round;
   background-attachment: fixed;
   width: 100% !important;
@@ -171,8 +171,7 @@ body.container {
 
 .MuiFormControl-root .btn.btn-cilogon .cilogon-icon-wrapper .cilogon-icon {
   position: absolute;
-  margin-top: 7px;
-  margin-left: 8px;
+  margin: 4%;
   left: 0;
   top: 0;
   max-width: 30px;
