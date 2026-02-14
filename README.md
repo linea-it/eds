@@ -1,15 +1,21 @@
-# LIneA Embedded Discovery Service
+# Repositório arquivado :warning:
+
+Mudanças devem ser realizadas no novo repositório de arquivos estáticos [https://github.com/linea-it/static](https://github.com/linea-it/static).
+
+----
+
+### LIneA Embedded Discovery Service
 
 Página de Login com botões referente aos provedores de autenticação configurados no SATOSA do LIneA e que podem ser utilizados pelos serviços LIneA que possuem integração SAML com Shibboleth SP.
 
-## Configuração
+#### Configuração
 
-### Requisitos
+##### Requisitos
 
 1. Serviço integrado e configurado com Shibboleth SP e Apache HTTP;
 2. Relação de confiança estabelecida entre o serviço e o SATOSA do LIneA.
 
-### Passos
+#### Passos
 
 1. Acesse o diretório `/var/www` do ambiente com Shibboleth SP e Apache; 
 2. Faça download deste repositório e acesse o diretório `eds`; 
@@ -44,7 +50,7 @@ Página de Login com botões referente aos provedores de autenticação configur
    systemctl restart httpd24-httpd.service
    ```
 
-### Observações gerais
+#### Observações gerais
 
 1. Esta página só funcionará com um Serviço integrado com SAML por meio do Shibboleth SP. Para outras implementações de SAML serão necessárias alterações no código deste repositório e nas configurações;
 2. Para o funcionamento correto dos redirecionamento para os provedores de autenticação presentes na página de login, é importante que seja estabelecida, previamente, a relação de confiança entre o serviço e o SATOSA do LIneA. Isso deve ser feito entre o serviço e cada um dos frontends do SATOSA. Os metadados do SATOSA e SPs estão acessíveis no link [https://identity.linea.org.br/metadata](https://identity.linea.org.br/metadata);
